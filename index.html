@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia's Recipe - Recipe Collection</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Familia's Recipe</h1>
+            <p class="subtitle">Delicious recipes made with love</p>
+        </header>
+
+        <div class="home-view" id="homeView">
+            <div class="nav-buttons">
+                <div class="category-card cakes" onclick="showCategory('cakes')">
+                    <div class="category-icon">🎂</div>
+                    <h2>Cakes</h2>
+                    <p>Fluffy, moist, and delightful</p>
+                </div>
+                <div class="category-card breads" onclick="showCategory('breads')">
+                    <div class="category-icon">🍞</div>
+                    <h2>Breads</h2>
+                    <p>Fresh baked goodness</p>
+                </div>
+                <div class="category-card cookies" onclick="showCategory('cookies')">
+                    <div class="category-icon">🍪</div>
+                    <h2>Cookies</h2>
+                    <p>Crispy, chewy perfection</p>
+                </div>
+            </div>
+        </div>
+<!-- Cake############################################################### -->
+        <div class="recipe-list" id="cakesList">
+            <button class="back-button" onclick="showHome()">← Back to Categories</button>
+            <div class="recipe-grid">
+                <div class="recipe-card" onclick="showRecipe('chiffon-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Basic Chiffon</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('supermoist9-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Supermoist Cake 9" rd</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('supermoist8x12-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Supermoist Cake 8 x 12</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('chocomoist-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Chocomoist</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('choco-mousse-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Choco Mousse</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('mocha10x14-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Mocha Cake 10 x 14</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('blackforest-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Black Forest</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('crema-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Crema de Fruta</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('ube-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Ube Cake</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('yema-cake')">
+                    <div class="recipe-card-body">
+                        <h3>Yema Cake</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<!-- Bread############################################################### -->
+        <div class="recipe-list" id="breadsList">
+            <button class="back-button" onclick="showHome()">← Back to Categories</button>
+            <div class="recipe-grid">
+                <div class="recipe-card" onclick="showRecipe('sourdough')">
+                    <div class="recipe-card-body">
+                        <h3>Sourdough Bread</h3>
+                    </div>
+                </div>
+
+                 <div class="recipe-card" onclick="showRecipe('croissant')">
+                    <div class="recipe-card-body">
+                        <h3>Croissant</h3> 
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('brioche')">
+                    <div class="recipe-card-body">
+                        <h3>Brioche</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('banana-bread')">
+                    <div class="recipe-card-body">
+                        <h3>Banana Bread</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('focaccia')">
+                    <div class="recipe-card-body">
+                        <h3>Focaccia</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<!-- Cookies############################################################### -->
+        <div class="recipe-list" id="cookiesList">
+            <button class="back-button" onclick="showHome()">← Back to Categories</button>
+            <div class="recipe-grid">
+                <div class="recipe-card" onclick="showRecipe('choc-chip')">
+                    <div class="recipe-card-body">
+                        <h3>Chocolate Chip</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('oatmeal')">
+                    <div class="recipe-card-body">
+                        <h3>Oatmeal Raisin</h3>
+                    </div>
+                </div>
+                
+                <div class="recipe-card" onclick="showRecipe('sugar-cookies')">
+                    <div class="recipe-card-body">
+                        <h3>Sugar Cookies</h3>
+                    </div>
+                </div>
+
+                <div class="recipe-card" onclick="showRecipe('macarons')">
+                    <div class="recipe-card-body">
+                        <h3>Macarons</h3>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+
+        <div class="recipe-detail" id="recipeDetail"></div>
+    </div>
+</body>
+</html>
